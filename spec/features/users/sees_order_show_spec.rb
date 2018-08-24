@@ -12,7 +12,7 @@ describe 'a user accessing the cart show page' do
     OrderAccessory.create(order_id: @order1.id, accessory_id: @accessory1.id, quantity: 2)
     OrderAccessory.create(order_id: @order1.id, accessory_id: @accessory2.id, quantity: 3)
     OrderAccessory.create(order_id: @order2.id, accessory_id: @accessory2.id, quantity: 1)
-  end
+  end 
 
   it 'can view order attributes' do
     visit dashboard_path
